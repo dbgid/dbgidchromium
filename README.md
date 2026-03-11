@@ -35,10 +35,16 @@ git clone https://github.com/dbgid/dbgidchromium
 cd dbgidchromium
 ```
 
-### 3. Install via pypi
+### 3. Install via PyPI
 
 ```bash
 pip install dbgidchromium
+```
+
+### 4. Install from GitHub
+
+```bash
+pip install git+https://github.com/dbgid/dbgidchromium
 ```
 
 ## Import
@@ -229,6 +235,8 @@ driver.typing_like_human("//input[@name='q']", "hello", press_enter=False)
 ## Wait for Click Navigation
 
 ```python
+from dbgidchromium import By
+
 button = driver.find_element_by_css_selector("button")
 button.click()
 driver.wait_for_navigation(locator=(By.CSS_SELECTOR, "body"))
