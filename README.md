@@ -35,18 +35,10 @@ git clone https://github.com/dbgid/dbgidchromium
 cd dbgidchromium
 ```
 
-### 3. pip
-
-Install Python requirements:
+### 3. Install via pypi
 
 ```bash
-pip install -r requirements.txt
-```
-
-Install the package locally:
-
-```bash
-pip install .
+pip install dbgidchromium
 ```
 
 ## Import
